@@ -50,7 +50,7 @@ public class MovieController {
         Actor actor = movieActorRequest.getActor();
         movie.addActor(actor);
         Movie savedMovie = movieService.save(movie);
-        return HollywoodUtility.convertMovieActorResponse(savedMovie,actor)
+        return HollywoodUtility.convertMovieActorResponse(savedMovie,actor);
     }
 
     @PostMapping("/addActor/ {movieId}")
